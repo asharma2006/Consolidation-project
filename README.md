@@ -5,7 +5,7 @@
 
 ## How to Run the Game
 1. Make sure you have **Python** installed.
-To install Python, visit the [Python Downloads](https://www.python.org/downloads)
+To install Python, visit the [Python Downloads](https://www.python.org/downloads) page.
 
 2. Clone this repository or download the ZIP file and extract it.
 3. In your terminal, navigate to the project directory.
@@ -27,3 +27,31 @@ python consolidation.py
 - When both players have 4 cards left, each gets 4 new cards (twice during the game).
 - Game ends after 16 rounds.
 - If one player scores 16 and the other 0, it's a "shot the moon" win.
+
+## Features Implemented
+- Shuffled Deck & Card Dealing
+The `Deck` class initializes a 48-card deck (Kings removed) and handles shuffling and card distribution.
+
+- Player Logic
+Each `Player` instance holds a hand of cards, can draw cards, and play a card. The game enforces suit-following rules
+
+- Round Winner Determination
+The function `determine_round_winner` compares two cards based on the lead suit to determine who wins the round.
+
+- Score Tracking & Lead Alternation
+The winner earns a point and leads the next round, handled in the main game loop.
+
+- Reveal Mechanic
+After each round, one card from the deck is revealed using `Deck.reveal_top()` to give players extra information
+
+- Mid-game Re-dealing
+The function `should_deal_more` ensures that players get 4 more cards when down to 4, until the deck runs out.
+
+- Game End Conditions
+`check_game_end` manages the 16-round cap and handles "shoot the moon" victory conditions.
+
+## Code Structure
+- `Card` class: Represents a card with suit and value. Includes string formatting for display.
+- `Deck` class: Manages the full deck, draws, and card revealing.
+- `Player` class: Handles each player's hand and actions like drawing and playing cards.
+- `main()` function: Orchestrates the game loop, turn-taking, score tracking, and rule enforcement
