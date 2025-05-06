@@ -53,7 +53,7 @@ The function `should_deal_more` ensures that players get 4 more cards when down 
 ## Known Limitations
 - **Player Hand Visibility:** Since the game runs in the terminal, both players can potentially see each other's hands. In a phyiscal game, the cards would be private. A more advanced version would implement hidden input or separate player screens.
 - **No Score Saving:** Scores and game results are not saved to a file or persistent storage after the game ends.
--**No Undo/Redo Functionality:** Once a move in made, it cannot be reversed. A more advanced version might include turn history and undo capabilities.
+- **No Undo/Redo Functionality:** Once a move in made, it cannot be reversed. A more advanced version might include turn history and undo capabilities.
 
 ## Code Structure
 - `Card` class: Represents a card with suit and value. Includes string formatting for display.
