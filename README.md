@@ -1,17 +1,29 @@
-# Tricksy Battle
+# Tricksy Battle - A 2-Player Card Game
 
-## Description
-Tricksy Battle is a simple two-player card game played with a modified standard deck (no Kings). Players take turns playing cards, following suit when possible, and scoring points based on who plays the higher card in the lead suit.
+## Overview
+**Tricksy Battle** is a Python implementation of a turn-based 2-player card game where players compete by playing cards from a modified deck. The game is designed to showcase good software design patterns and avoid common antipatterns, as part of a consolidation project.
 
-The game ends after 16 rounds, or early if a player reaches 9 points while the other player has at least 1. If a player wins 16–0, they "shoot the moon" and win with 17 points.
+## How to Run the Game
+1. Make sure you have **Python** installed.
+To install Python, visit the (Python Downloads)[https://www.python.org/downloads]
 
-This version is implemented for two human players in the terminal using Python.
-
-## How to Run
-
-1. Ensure you have Python 3 installed.
-2. Run the game using the terminal:
-
+2. Clone this repository or download the ZIP file and extract it.
+3. In your terminal, navigate to the project directory.
+4. Run the game using:
 ```bash
-python main.py
+python consolidation.py
 ```
+
+## Game Rules
+- The game uses a 48-card deck (standard deck minus Kings).
+- Each player is dealt 8 cards initially.
+- Each round:
+    - One player leads by playing a card.
+    - The second player must follow suit if they can, or play any card otherwise.
+    - The highest card in the lead suit wins the round.
+- After each round:
+    - One card is drawn from the deck and revealed (not used).
+    - Winner earns a point and leads the next round.
+- When both players have 4 cards left, each gets 4 new cards (twice during the game).
+- Game ends after 16 rounds.
+- If one player scores 16 and the other 0, it's a "shot the moon" win.
