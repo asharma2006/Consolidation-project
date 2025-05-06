@@ -5,7 +5,7 @@
 
 ## How to Run the Game
 1. Make sure you have **Python** installed.
-To install Python, visit the (Python Downloads)[https://www.python.org/downloads]
+To install Python, visit the [Python Downloads](https://www.python.org/downloads)
 
 2. Clone this repository or download the ZIP file and extract it.
 3. In your terminal, navigate to the project directory.
