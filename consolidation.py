@@ -1,10 +1,12 @@
-# main.py
+# consolidation.py
 import random
 
+# Variables
 SUITS = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
 RANKS = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen']
 RANK_VALUES = {rank: i+1 for i, rank in enumerate(RANKS)}
 
+# Classes
 class Card:
     def __init__(self, suit, rank):
         self.suit = suit
